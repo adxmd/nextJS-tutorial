@@ -140,14 +140,6 @@ export default function EditInvoiceForm({
           </div>
         </fieldset>
       </div>
-      <div id="success-error" aria-live="polite" aria-atomic="true">
-            {state.message &&
-              [state.message].map((message: string) => (
-                <p className="mt-2 text-sm text-red-500" key={message}>
-                  {message}
-                </p>
-            ))}
-      </div>
       <div className="mt-6 flex justify-end gap-4">
         <Link
           href="/dashboard/invoices"
